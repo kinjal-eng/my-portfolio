@@ -1,0 +1,321 @@
+<!DOCTYPE html> <!-- it shows the type of file-->
+<html lang="en"> <!-- showing the language we are using in code-->
+
+<head><!-- it contain metadata and links -->
+<meta charset="UTF-8"> <!-- it support all languages and symbols -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes website responsive -->
+
+<title>Modern Portfolio</title>
+<!--Title shown in browser tab-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Helps browser connect faster to Google Fonts 
+ preconnect = prepare connection early for faster loading-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Helps Google Fonts load faster -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Imports Poppins font from Google Fonts -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Imports Font Awesome icons library -->
+
+<link rel="stylesheet" href="style.css">
+<!-- Links external CSS file -->
+</head>
+
+<body>
+<!-- It contain All visible content of webpage -->
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container nav-content">
+  <!-- This container keeps everything nicely arranged in one line -->
+
+    <div class="logo">Portfolio</div>
+     <!-- This is website name or logo shown at the top -->
+
+    <ul><!-- This is a list of items that will show on navbar-->
+      <li><a href="#home">Home</a></li>
+      <!-- This button takes you to the "Home page" -->
+      <li><a href="#about">About</a></li>
+       <!-- This button takes you to the "About me" section -->
+      <li><a href="#skills">Skills</a></li>
+       <!-- This button shows what skills i have -->
+      <li><a href="#projects">Projects</a></li>
+      <!-- This button shows my work or projects i have made -->
+      <li><a href="#contact">Contact</a></li>
+       <!-- This button takes you to the contact section where people can reach me -->
+    </ul>
+
+  </div>
+</nav>
+
+<!-- HERO --> 
+<!-- A hero section is the first big visible part of a website when you open it.--> 
+<section class="hero" id="home">
+<!-- This is the main top section of the website and first thing people will see -->
+
+
+  <div class="container hero-content">
+  <!-- This box keeps text and image neatly aligned together -->
+    <div class="hero-text">
+  <!-- This is the left side where text is written -->
+      <h3>Hello, I'm</h3>
+      <!-- A small greeting line -->
+      <h1><span>Kinjal Dakwe</span></h1>
+
+      <p>Information Technology Student • GATE CSE Aspirant • FullStack Developer</p>
+      <!-- A short line describing who i am and what i do -->
+      <div class="btns">
+      <!-- This is a box that holds buttons -->
+  
+        <a href="#projects" class="btn primary">View Projects</a>
+        <!-- This button takes you to your projects section -->
+        <a href="assets/FRONTEND1.pdf" class="btn secondary">Download Resume</a>
+        <!-- This button is for downloading your resume -->
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+    <!-- This is the right side where my picture is shown -->  
+      <img src="profile.jpeg" alt="profile">
+       <!-- This is my profile photo -->
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<!-- This is the "About Me" section where you tell people about yourself -->  
+  <div class="container">
+  <!-- This box keeps everything nicely aligned and centered -->  
+
+    <div class="section-title">
+    <!-- This is the heading area of the section where about me will apprae in bold-->  
+      <h2>About Me</h2>
+      <!-- This is the main title that says "About Me" -->
+    </div>
+
+    <div class="about-grid">
+     <!-- This is a layout system that arranges content in boxes -->  
+
+      <div class="about-card">
+      <!-- First small information box -->
+        <h3>Who Am I?</h3>
+        <!-- Small heading inside the first box -->
+        <p>I am an Information Technology student and an aspiring Full Stack Developer passionate about building modern web applications. I am continuously learning and trying to implement backend systems in real projects while improving my problem-solving skills. I enjoy breaking real-world problems into simple solutions and turning them into working products, and seeing them function in real life gives me a strong sense of fulfillment. Alongside development, I am preparing for the GATE exam to strengthen my core computer science fundamentals and pursue higher studies.</p>
+        <!-- Simple description about who i am -->
+      </div>
+
+      <div class="about-card">
+      <!-- second small information box -->  
+        <h3>My Journey</h3>
+        <!-- Second heading inside another box -->
+        <p> I started my journey in technology during my BSc in Information Technology, where I got my first exposure to programming and software development. Over time, this curiosity turned into a strong interest in building real applications. I am now pursuing my MSc in IT, where I am improving my computer science fundamentals and working on full stack development through practical projects. Alongside this, I am also preparing for the GATE exam to strengthen my core knowledge and aim for higher studies.</p>
+         <!-- Explanation of what i am currently doing and my goals -->
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<!-- This is the skills section where i show what i know -->
+
+  <div class="container">
+  <!-- we are giving container to each skill-->  
+
+    <div class="section-title">
+    <!-- This is the heading area of the skills section -->  
+      <h2>Skills</h2>
+      <!--Main title saying "Skills"-->
+      <p>Technologies I work with</p>
+      <!-- just a small discription for that title-->
+    </div>
+
+    <div class="skills">
+     <!-- This is the main box that holds all skill items -->
+
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+
+      <!-- to give structure -->
+
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+      <!-- for styling-->
+
+      <div class="skill">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <!-- Programming language for web interactivity -->
+
+      <div class="skill">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java</h3>
+      </div>
+       <!-- Backend / programming language -->
+
+      <div class="skill">
+        <i class="fa-solid fa-database"></i>
+        <h3>SQL</h3>
+      </div>
+      <!-- Database language for storing data -->
+
+      <div class="skill">
+        <i class="fa-brands fa-git-alt"></i>
+        <h3>Git</h3>
+      </div>
+      <!-- Version control tool (tracks code changes) -->
+
+      <div class="skill">
+        <i class="fa-brands fa-github"></i>
+        <h3>GitHub</h3>
+      </div>
+      <!-- Platform to store and share code online -->
+
+      <div class="skill">
+        <i class="fa-solid fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+      <!-- JavaScript backend runtime -->
+
+      <div class="skill">
+        <i class="fa-solid fa-server"></i>
+        <h3>CI/CD</h3>
+      </div>
+       <!-- Automatic code testing and deployment system -->
+
+      <div class="skill">
+        <i class="fa-brands fa-react"></i>
+        <h3>REACT</h3>
+      </div>
+      <!-- Frontend library for building UI -->
+
+      <div class="skill">
+        <i class="fa-solid fa-code"></i>
+        <h3>.NET</h3>
+      </div>
+      <!-- Microsoft backend framework -->
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<!-- This is the projects section where i show my work -->  
+  <div class="container">
+  <!-- This box keeps everything neat and centered on the page -->
+  
+
+    <div class="section-title">
+    <!-- This is the heading area of the projects section -->
+      <h2>Projects</h2>
+      <!-- Main title saying "Projects" -->
+      <p>My recent Projects</p>
+       <!-- Small description about this section -->
+    </div>
+
+    <div class="projects">
+    <!-- This is the main box that holds all project cards -->  
+
+      <div class="project-card">
+      <!-- One project box (card) -->  
+        <div class="project-img"></div>
+        <!-- This is where project image will be shown -->
+        <div class="project-content">
+         <!-- This is the text area of the project -->  
+          <h3>Portfolio Website</h3>
+          <p>Modern responsive portfolio using HTML and CSS.</p>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img"></div>
+        <div class="project-content">
+          <h3>Job Form</h3>
+          <p>Responsive job application form UI.</p>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img"></div>
+        <div class="project-content">
+          <h3>Tracking for GATE</h3>
+          <p>Tacking system to know my improvement using html, css and JavaScript.</p>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<!-- This is the contact section where people can send me messages -->
+
+  <div class="container">
+  <!-- This box keeps everything neat and centered -->  
+
+    <div class="section-title">
+    <!-- This is the heading area -->
+  
+      <h2>Contact</h2>
+      <!-- Main title of this section -->
+    </div>
+
+    <form class="contact-box">
+    <!-- This is a form where users can type and send messages -->
+
+      <input type="text" placeholder="Your Name" required>
+      <!-- Box to enter your name -->
+      <input type="email" placeholder="Your Email" required>
+      <!-- Box to enter email address -->
+      <textarea placeholder="Your Message" required></textarea>
+      <!-- Big box to write the message -->
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="socials">
+  <!-- This box holds social media links -->  
+    <a href="https://github.com/kinjal-eng">
+      <i class="fa-brands fa-github"></i></a>
+    <!-- Link to GitHub profile -->
+    <a href="www.linkedin.com/in/kinjal-dakwe">
+      <i class="fa-brands fa-linkedin"></i></a>
+    <!-- Link to LinkedIn profile -->
+  </div>
+
+</footer>
+
+</body>
+</html>

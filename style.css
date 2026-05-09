@@ -1,0 +1,410 @@
+** {
+  margin: 0;
+  /* Removes extra space outside every element */
+
+  padding: 0;
+  /* Removes extra space inside every element */
+  box-sizing: border-box;
+  /* Makes width and height calculation easier */
+  scroll-behavior: smooth;
+  /* Makes scrolling feel smooth when clicking links */
+}
+
+/* This is the ROOT section global color settings for whole website */
+:root {
+  --bg: #0f172a;
+  /* Background color of the website (dark blue color) */
+  --card: #111827;
+  /* Color for cards (slightly lighter dark background) */
+  --card2: #1e293b;
+  /* Another shade for cards or boxes (for variation) */
+  --text: #f1f5f9;
+   /* Main text color (almost white so it is readable on dark background) */
+  --muted: #94a3b8;
+   /* Light gray text for less important information */
+  --primary: #8b5cf6;
+   /* Main highlight color (used for buttons, important links) */
+  --secondary: #38bdf8;
+  /* Second highlight color (used for accents or hover effects) */
+}
+
+/* This styles the whole webpage (everything inside body) */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Sets the text style (font) for the entire website */
+  background: var(--bg);
+  /* Sets the background color using the global variable (dark theme color) */
+  color: var(--text);
+  /* Sets default text color (light color so it is readable on dark background) */
+}
+
+/* FIX NAV OVERLAP */
+body {
+  padding-top: 90px;
+  /* Adds space at the top so content does NOT go under the navigation bar */
+}
+
+.container {
+  /* This is a common container used to keep content centered */
+  width: 90%;
+  /* Website content will take 90% of the screen width (not full width) */
+  max-width: 1200px;
+  /* Even on big screens, content will NOT go beyond 1200px */
+  margin: auto;
+  /* This automatically centers the container in the middle of the page */
+}
+
+/* NAVBAR */
+nav {
+  /* This styles the top menu bar of the website */
+  position: fixed;
+  /* Keeps navbar always visible even when you scroll */
+  top: 0;
+  /* Places navbar at the very top of the page */
+  width: 100%;
+  /* Makes navbar full width (left to right) */
+  background: rgba(17, 24, 39, 0.9);
+  /* Dark transparent background color */
+  backdrop-filter: blur(10px);
+  /* Makes background behind navbar slightly blurry (glass effect) */
+  padding: 20px 0;
+  /* Adds space inside navbar (top and bottom) */
+  z-index: 1000;
+  /* Keeps navbar above all other elements */
+}
+
+.nav-content {
+  /* This is the container inside navbar */
+  display: flex;
+  /* Makes items come in a row (side by side) */
+  justify-content: space-between;
+  /* Puts logo on left and menu on right */
+  align-items: center;
+  /* Aligns everything vertically in center */
+}
+
+.logo {
+ /* This is the website logo text */ 
+  font-size: 28px;
+  /* Makes logo text bigger */
+  color: var(--primary);
+  /* Uses main theme color for logo */
+  font-weight: 700;
+  /* Makes text bold */
+}
+
+nav ul {
+/* This styles the menu list */  
+  display: flex;
+  /* Makes menu items appear in a row */
+  gap: 25px;
+  /* Adds space between each menu item */
+  list-style: none;
+  /* Removes bullet points from list */
+}
+
+nav a {
+  /* This styles each menu link */
+  color: white;
+  /* Makes text white */
+  text-decoration: none;
+  /* Removes underline from links */
+}
+
+nav a:hover {
+  /* This happens when you move mouse on menu items */
+  color: var(--primary);
+  /* Changes color when you hover (adds highlight effect) */
+}
+
+/* HERO */
+/* This is the main first section of the website */
+.hero {
+  min-height: 100vh;
+  /* Makes hero section take full screen height */
+  display: flex;
+  /* Enables flexible layout (used to center content easily) */
+  align-items: center;
+  /* Vertically centers content inside the hero section */
+}
+
+.hero-content {
+/* This holds both text and image */  
+  display: grid;
+  /* Uses grid layout to arrange items in columns */
+  grid-template-columns: 1fr 1fr;
+  /* Splits screen into 2 equal parts (left + right) */
+  gap: 60px;
+  /* Adds space between left and right sections */
+  align-items: center;
+  /* Aligns content vertically in the center */
+}
+
+.hero-text h3 {
+  /* This styles the small heading text */
+  color: var(--secondary);
+  /* Sets light blue color for greeting text */
+}
+
+.hero-text h1 {
+  /* This styles your main name heading */
+  font-size: 60px;
+  /* Makes my name very big and visible */
+  margin: 20px 0;
+  /* Adds space above and below the name */
+}
+
+.hero-text h1 span {
+  color: var(--primary);
+   /* Makes part of your name purple (highlight effect) */
+}
+
+.hero-text p {
+/* This styles the description text */
+  color: var(--muted);
+  /* Makes text light gray so it looks soft */
+  margin-bottom: 30px;
+  /* Adds space below paragraph before buttons */
+}
+
+.btns {
+/* This is the container that holds all buttons */
+  display: flex;
+  /* Makes buttons come in a row (side by side) */
+  gap: 20px;
+  /* Adds space between each button */
+}
+
+.btn {
+/* This styles all buttons */
+  padding: 14px 28px;
+  /* Adds space inside button (makes it bigger and easier to click) */
+  border-radius: 12px;
+  /* Makes button corners rounded (soft look) */
+  text-decoration: none;
+  /* Removes underline from links (so they look like real buttons) */
+}
+
+.primary {
+/* This is the main important button (like "View Projects") */  
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  /* Creates a colorful gradient background (purple → blue) */
+  color: white;
+  /* Makes text white so it is readable on colorful background */
+}
+
+.secondary {
+/* This is a simple less-important button (like "Download Resume") */  
+  border: 1px solid rgba(255,255,255,0.2);
+  /* Adds a light thin border around the button */
+  color: white;
+}
+
+/* IMAGE */
+.hero-image img {
+/* This styles the profile picture in the hero section */  
+  width: 320px;
+   /* Sets image width to 320 pixels (makes it medium-large) */
+  height: 320px;
+  /* Sets image height to 320 pixels (keeps it square) */
+  border-radius: 50%;
+  /* Makes image perfectly round circle shape */
+  object-fit: cover;
+  /* Makes sure image fills the circle without stretching */
+  border: 5px solid var(--primary);
+  /* Adds a colored border around image (theme color border) */
+}
+
+/* SECTIONS */
+/* This styles all main sections of the website */
+section {
+  padding: 100px 0;
+  /* Adds space inside each section (top & bottom) so content is not crowded */
+}
+
+.section-title {
+/* This styles the title area of each section */  
+  text-align: center;
+  /* Makes text appear in the center of the page */
+  margin-bottom: 60px;
+  /* Adds space below the title so content doesn’t stick to it */
+}
+
+.section-title h2 {
+/* This styles the main heading of each section */  
+  font-size: 40px;
+  /* Makes section title big and clear */
+}
+
+/* SKILLS */
+/* This styles the container that holds all skill boxes */
+.skills {
+  display: grid;
+  /* Uses grid layout to arrange skills in rows and columns */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* Automatically fits as many skill boxes as possible
+   Each box is at least 180px wide, otherwise it expands */
+  gap: 20px;
+  /* Adds space between each skill box */
+}
+
+.skill {
+  /* This styles each individual skill box */
+  background: var(--card);
+  /* Sets dark background color for skill box */
+  padding: 30px;
+  /* Adds space inside the box so content looks spacious */
+  text-align: center;
+  /* Centers text and icons inside the box */
+  border-radius: 20px;
+  /* Makes corners rounded for modern look */
+}
+
+.skill:hover {
+  /* This effect happens when you move mouse over a skill box */
+  background: var(--card2);
+  /* Changes background color when hovering */
+  transform: translateY(-10px);
+  /* Moves the box slightly upward (cool hover animation effect) */
+}
+
+/* PROJECTS */
+/* This styles the container that holds all project cards */
+.projects {
+  display: grid;
+  /* Arranges projects in a grid (rows + columns) */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Automatically adjusts number of cards based on screen size
+     Each card is at least 280px wide */
+  gap: 30px;
+  /* Adds space between each project card */
+}
+
+.project-card {
+  /* This styles each project box/card */
+  background: var(--card);
+  /* Dark background color for the card */
+  border-radius: 20px;
+  /* Makes corners rounded (modern look) */
+  overflow: hidden;
+  /* Makes sure content does not go outside the rounded edges */
+}
+
+.project-img {
+/* This is the image area of each project */  
+  height: 200px;
+  /* Sets fixed height for project image area */
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  /* Adds colorful gradient background (used as placeholder image) */
+}
+
+.project-content {
+/* This is the text area inside each project card */
+  padding: 20px;
+  /* Adds space inside the content box */
+}
+
+.project-content p {
+/* This styles the description text inside project */  
+  color: var(--muted);
+  /* Makes text light gray so it looks soft and less bold */
+  margin: 10px 0;
+  /* Adds space above and below paragraph */
+}
+
+/* CONTACT */
+.contact-box {
+/* This styles the contact form box */  
+  max-width: 600px;
+  /* Limits the form width so it doesn’t become too wide */
+  margin: auto;
+  /* Centers the form in the middle of the page */
+  display: flex;
+  /* Arranges form elements in a vertical layout system */
+  flex-direction: column;
+  /* Makes items stack from top to bottom */
+  gap: 15px;
+  /* Adds space between input fields and button */
+}
+
+.contact-box input,
+/* This styles input fields (name, email) and message box */
+.contact-box textarea {
+  padding: 12px;
+  /* Adds space inside the box so text is not touching edges */
+  border: none;
+  /* Removes default border */
+  border-radius: 10px;
+  /* Makes corners rounded (soft modern look) */
+  background: var(--card);
+  color: white;
+}
+
+.contact-box button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  /* Adds colorful gradient background (nice modern effect) */
+  color: white;
+}
+
+/* FOOTER */
+/* This styles the bottom end part of the website */
+footer {
+  text-align: center;
+  /* Makes all footer content centered */
+  padding: 40px;
+  /* Adds space inside footer so it doesn’t look crowded */
+}
+
+.socials {
+/* This holds all social media icons */  
+  display: flex;
+  /* Places icons in a row */
+  justify-content: center;
+  /* Centers icons horizontally */
+  gap: 20px;
+  /* Adds space between each icon */
+}
+
+.socials a {
+/* This styles each social media link (icon box) */  
+  width: 45px;
+  height: 45px;
+  /* To makes each icon box a perfect square */
+  display: flex;
+  /* Helps center icon inside box */
+  justify-content: center;
+  /* Centers icon horizontally inside circle */
+  align-items: center;
+  /* Centers icon vertically inside circle */
+  background: var(--card);
+  /* Gives dark background color to icon circle */
+  border-radius: 50%;
+  /* Makes square into a circle */
+  color: var(--primary);
+  /* Sets icon color (theme highlight color) */
+}
+
+/* RESPONSIVE */
+/* This makes the website look good on small screens like mobile/tablet */
+@media(max-width: 900px) {
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    /* Changes layout from 2 columns to 1 column (stacked vertically) */
+    text-align: center;
+    /* Centers all text when screen becomes small */
+  }
+
+  .btns {
+    justify-content: center;
+    /* Moves buttons to the center on small screens */
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    /* Makes the main name smaller so it fits on mobile screens */
+  }
+}
